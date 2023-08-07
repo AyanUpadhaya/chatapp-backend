@@ -37,7 +37,7 @@ server.listen(PORT,()=>{
 
 const io = socket(server,{
     cors:{
-        origin:"http://localhost:5173",
+        origin:"*",
         credentials:true,
     }
 })
